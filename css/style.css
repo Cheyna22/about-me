@@ -6,25 +6,36 @@ h1 {
   background-color: rgb(37, 31, 31);
   color: rgb(39, 6, 158);
   font-size: 80px;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: fantasy;
   text-align: center;
   border: 10px;
   border-color: rgb(85, 80, 80);
   border-style: solid;
 }
 
+#lets-learn {
+  font-size: 50px;
+}
+
 h2 {
   font-size: 40px;
   font-family: Arial, Helvetica, sans-serif;
   color: rgb(95, 4, 27);
-  margin-left: 30px;
 }
 
-p{
-  background-color: rgb(37, 174, 192);
+#below-line{
   color: rgb(189, 10, 25);
   font-size: 20px;
   font-family: Georgia, 'Times New Roman', Times, serif;
-  margin-left: 20px;
-  padding-left: 30px;
+  padding: 5px 5px 5px 5px;
+}
+
+.questions {
+  color: rgb(207, 30, 39);
+  text-indent: 15px;
+}
+
+.answers {
+  color:rgb(85, 80, 80);
+  text-indent: 40px;
 }
