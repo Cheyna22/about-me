@@ -10,6 +10,7 @@ var numGuesses = 0; //tracking # of guesses the user inputs
 alert('Let\'s play a guessing game about Cheyna!');
 
 // do i like tomatoes
+function theTomatoGame() {
 var likeTomatoes = prompt('Do you think she likes tomatoes?').toLowerCase();
 if (likeTomatoes === 'yes') {
   alert('Correct! I do love tomatoes with salt!');
@@ -20,8 +21,13 @@ if (likeTomatoes === 'yes') {
   alert('Actually, I do love tomatoes!');
 }
 console.log('Like tomatoes? The user answered: ' + likeTomatoes);
+}
+
+theTomatoGame();
 
 // am I 26?
+
+function theAgeGame() {
 var myAge = prompt('Do you think that she 26 years old?').toLowerCase();
 if (myAge === 'yes') {
   alert('Correct! I am 26 years old!');
@@ -31,9 +37,13 @@ if (myAge === 'yes') {
 } else {
   alert('That is incorrect! I am 26 years old!');
 }
+}
 console.log('Am I 26? The user answered: ' + myAge);
 
+theAgeGame();
+
 // favorite animal questions
+function theAnimalGame() {
 var favAnimal = prompt('Is she a cat lover?').toLowerCase();
 if (favAnimal === 'no') {
   alert('You got it, I am NOT a cat lover!');
@@ -44,9 +54,13 @@ if (favAnimal === 'no') {
   alert('Ooops! I am actually a dog lover!');
 }
 console.log('Animal lover? The user answered: ' + favAnimal);
+}
+
+theAnimalGame();
 
 
 // is heights biggest fear
+function amIafraid() {
 var bigFear = prompt('Is her biggest fear heights?').toLowerCase();
 if (bigFear === 'no') {
   alert('Correct! My biggest fear is spiders!');
@@ -57,10 +71,13 @@ if (bigFear === 'no') {
   alert('Sorry, my biggest fear is spiders!');
 }
 console.log('Biggest fear heights? The user answered: ' + bigFear);
+}
 
+amIafraid();
 
 // have i been to australia
-var visitedAus = prompt('Has she ever been to Australia?').toLowerCase();
+function haveIbeentoAustralia() {
+  var visitedAus = prompt('Has she ever been to Australia?').toLowerCase();
 if (visitedAus === 'no') {
   alert('Correct, I have not been to Australia!');
   points = points + 1;
@@ -70,10 +87,14 @@ if (visitedAus === 'no') {
   alert('That\'s wrong! I have not been to Australia.');
 }
 console.log('Been to australia? The user answered: ' + visitedAus);
+}
+
+haveIbeentoAustralia();
 
 
 // giving user 4 guesses to try to guess the number 2 for how many dogs I have
-for (var i = 0; i < 4; i++) {
+function theDogGame() {
+  for (var i = 0; i < 4; i++) {
   var numDogs = parseInt(prompt('We know that Cheyna is a dog lover.  You have 4 guesses to tell me how many dogs do you think she has?'));
   numGuesses = numGuesses + 1;
   console.log('total guesses '+ numGuesses);
@@ -101,11 +122,13 @@ for (var i = 0; i < 4; i++) {
     }
   }
 }
+}
 
+theDogGame();
+
+function stateGuessingGame() { 
 var visitedStates = ['wyoming', 'california', 'oregon', 'north dakota', 'utah', 'montana'];
 var stateGuessCounter = 0;
-
-
 // giving user 6 chances to try to match their guess to one of my array elements, if they answer one right they get a point
 for (var i = 0; i < 6; i++) {
   var stateGuess = prompt('What states do you think Cheyna has been to?').toLowerCase();
@@ -125,13 +148,20 @@ for (var i = 0; i < 6; i++) {
     }
   }
 }
+}
 
+
+stateGuessingGame();
 
 //total points after game
-if (points === 1) {
+function finalScore() {
+  if (points === 1) {
   alert('Total Points: ' + points);
   console.log('user has ' + points + ' point');
 } else {
   alert('Total Points: ' + points);
   console.log('user has ' + points + ' points');
 }
+}
+
+finalScore();
