@@ -2,19 +2,20 @@
 var correctA = ('Good job! That is correct!');
 var wrongA = ('Sorry, that is incorrect!');
 
-var points = 0;
-var numGuesses = 0;
 
-//1st alert
+var points = 0; // tracking number of points for correct answers
+var numGuesses = 0; //tracking # of guesses the user inputs
+
+// 1st alert to get the game started
 alert('Let\'s play a guessing game about Cheyna!');
 
 // do i like tomatoes
-var likeTomatoes = prompt('Do you think she likes tomatos?').toLowerCase();
+var likeTomatoes = prompt('Do you think she likes tomatoes?').toLowerCase();
 if (likeTomatoes === 'yes') {
-  alert('Correct! I love tomatoes with salt!');
-  points = points + 1;
+  alert('Correct! I do love tomatoes with salt!');
+  points = points + 1; //gives the user a point if answer is correct
 } else if (likeTomatoes === 'y') {
-  alert('Correct! I love tomatoes with salt!');
+  alert('Correct! I do love tomatoes with salt!');
 } else {
   alert('Actually, I do love tomatoes!');
 }
@@ -71,7 +72,7 @@ if (visitedAus === 'no') {
 console.log('Been to australia? The user answered: ' + visitedAus);
 
 
-
+// giving user 4 guesses to try to guess the number 2 for how many dogs I have
 for (var i = 0; i < 4; i++) {
   var numDogs = parseInt(prompt('We know that Cheyna is a dog lover.  You have 4 guesses to tell me how many dogs do you think she has?'));
   numGuesses = numGuesses + 1;
@@ -80,9 +81,8 @@ for (var i = 0; i < 4; i++) {
     alert(correctA);
     console.log(numDogs + 'correct');
     points = points + 1;
-    break;
+    break; //breaks out of loop if they get it correct
   } else {
-    //alert(wrongA);
     if (numDogs <= 1) {
       console.log('number of guesses less than or equal to 1 ' + numGuesses);
       if (numGuesses === 4) {
@@ -106,7 +106,7 @@ var visitedStates = ['wyoming', 'california', 'oregon', 'north dakota', 'utah', 
 var stateGuessCounter = 0;
 
 
-
+// giving user 6 chances to try to match their guess to one of my array elements, if they answer one right they get a point
 for (var i = 0; i < 6; i++) {
   var stateGuess = prompt('What states do you think Cheyna has been to?').toLowerCase();
   stateGuessCounter = stateGuessCounter + 1;
