@@ -1,6 +1,6 @@
 'use strict';
-var correctA = ("Good job! That is correct!");
-var wrongA = ("Sorry, that is incorrect!");
+var correctA = ('Good job! That is correct!');
+var wrongA = ('Sorry, that is incorrect!');
 
 var points = 0;
 var numGuesses = 0;
@@ -76,30 +76,30 @@ for (var i = 0; i < 4; i++) {
   var numDogs = parseInt(prompt('We know that Cheyna is a dog lover.  You have 4 guesses to tell me how many dogs do you think she has?'));
   numGuesses = numGuesses + 1;
   console.log('total guesses '+ numGuesses);
-    if (numDogs === 2) {
-      alert(correctA);
-      console.log(numDogs + 'correct');
-      points = points + 1;
-      break;
-    } else {
-      //alert(wrongA);
-      if (numDogs <= 1) {
-        console.log('number of guesses less than or equal to 1 ' + numGuesses);
-        if (numGuesses === 4) {
-           alert('Uh-Oh! You ran out of guesses, better luck next time!');
-           break;
-        } else {
-          alert('That\'s too low! Guess again.');
-        }
+  if (numDogs === 2) {
+    alert(correctA);
+    console.log(numDogs + 'correct');
+    points = points + 1;
+    break;
+  } else {
+    //alert(wrongA);
+    if (numDogs <= 1) {
+      console.log('number of guesses less than or equal to 1 ' + numGuesses);
+      if (numGuesses === 4) {
+        alert('Uh-Oh! You ran out of guesses, better luck next time!');
+        break;
       } else {
-        if (numGuesses === 4) {
-          alert('Uh-oh! You ran out of guesses, better luck next time!');
-          break;
-        }
-        console.log('user guessed too high ' + numDogs);
-       alert('That was too high, try again!');
+        alert('That\'s too low! Guess again.');
       }
+    } else {
+      if (numGuesses === 4) {
+        alert('Uh-oh! You ran out of guesses, better luck next time!');
+        break;
+      }
+      console.log('user guessed too high ' + numDogs);
+      alert('That was too high, try again!');
     }
+  }
 }
 
 var visitedStates = ['wyoming', 'california', 'oregon', 'north dakota', 'utah', 'montana'];
@@ -108,7 +108,7 @@ var stateGuessCounter = 0;
 
 
 for (var i = 0; i < 6; i++) {
-  var stateGuess = prompt("What states do you think Cheyna has been to?").toLowerCase();  
+  var stateGuess = prompt('What states do you think Cheyna has been to?').toLowerCase();
   stateGuessCounter = stateGuessCounter + 1;
   console.log(stateGuess);
   console.log(visitedStates.indexOf(stateGuess));
@@ -118,9 +118,9 @@ for (var i = 0; i < 6; i++) {
     alert('That is correct!');
     break;
   } else {
-    alert('Sorry! That is incorrect!');
+    alert(wrongA);
     if (stateGuessCounter === 6) {
-      alert('Uh-oh! You have no more guesses! Here are the correct possible answers: ' + visitedStates[0] + ', ' + visitedStates[1].toUpperCase + ', ' + visitedStates[2] + ', ' + visitedStates[3] + ', ' + visitedStates[4] + ', or ' + visitedStates[5] + '.');
+      alert('Uh-oh! You have no more guesses! Here are the correct possible answers: ' + visitedStates[0] + ', ' + visitedStates[1] + ', ' + visitedStates[2] + ', ' + visitedStates[3] + ', ' + visitedStates[4] + ', or ' + visitedStates[5] + '.');
       break;
     }
   }
