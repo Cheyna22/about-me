@@ -23,8 +23,6 @@ function theTomatoGame() {
   console.log('Like tomatoes? The user answered: ' + likeTomatoes);
 }
 
-theTomatoGame();
-
 // am I 26?
 function theAgeGame() {
   var myAge = prompt('Do you think that she 26 years old?').toLowerCase();
@@ -35,11 +33,12 @@ function theAgeGame() {
     alert('Correct! I am 26 years old!');
   } else {
     alert('That is incorrect! I am 26 years old!');
+    console.log('Am I 26? The user answered: ' + myAge);
   }
 }
-console.log('Am I 26? The user answered: ' + myAge);
 
-theAgeGame();
+
+
 
 // favorite animal questions
 function theAnimalGame() {
@@ -55,7 +54,7 @@ function theAnimalGame() {
   console.log('Animal lover? The user answered: ' + favAnimal);
 }
 
-theAnimalGame();
+
 
 
 // is heights biggest fear
@@ -72,7 +71,7 @@ function amIafraid() {
   console.log('Biggest fear heights? The user answered: ' + bigFear);
 }
 
-amIafraid();
+
 
 // have i been to australia
 function haveIbeentoAustralia() {
@@ -88,7 +87,7 @@ function haveIbeentoAustralia() {
   console.log('Been to australia? The user answered: ' + visitedAus);
 }
 
-haveIbeentoAustralia();
+
 
 
 // giving user 4 guesses to try to guess the number 2 for how many dogs I have
@@ -123,7 +122,7 @@ function theDogGame() {
   }
 }
 
-theDogGame();
+
 
 function stateGuessingGame() { 
   var visitedStates = ['wyoming', 'california', 'oregon', 'north dakota', 'utah', 'montana'];
@@ -150,7 +149,7 @@ function stateGuessingGame() {
 }
 
 
-stateGuessingGame();
+
 
 //total points after game
 function finalScore() {
@@ -163,4 +162,11 @@ function finalScore() {
   }
 }
 
+theTomatoGame();
+theAgeGame();
+theAnimalGame();
+amIafraid();
+haveIbeentoAustralia();
+theDogGame();
+stateGuessingGame();
 finalScore();
