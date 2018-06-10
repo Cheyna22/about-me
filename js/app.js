@@ -37,9 +37,6 @@ function theAgeGame() {
   }
 }
 
-
-
-
 // favorite animal questions
 function theAnimalGame() {
   var favAnimal = prompt('Is she a cat lover?').toLowerCase();
@@ -53,9 +50,6 @@ function theAnimalGame() {
   }
   console.log('Animal lover? The user answered: ' + favAnimal);
 }
-
-
-
 
 // is heights biggest fear
 function amIafraid() {
@@ -71,8 +65,6 @@ function amIafraid() {
   console.log('Biggest fear heights? The user answered: ' + bigFear);
 }
 
-
-
 // have i been to australia
 function haveIbeentoAustralia() {
   var visitedAus = prompt('Has she ever been to Australia?').toLowerCase();
@@ -86,9 +78,6 @@ function haveIbeentoAustralia() {
   }
   console.log('Been to australia? The user answered: ' + visitedAus);
 }
-
-
-
 
 // giving user 4 guesses to try to guess the number 2 for how many dogs I have
 function theDogGame() {
@@ -122,9 +111,7 @@ function theDogGame() {
   }
 }
 
-
-
-function stateGuessingGame() { 
+function stateGuessingGame() {
   var visitedStates = ['wyoming', 'california', 'oregon', 'north dakota', 'utah', 'montana'];
   var stateGuessCounter = 0;
   // giving user 6 chances to try to match their guess to one of my array elements, if they answer one right they get a point
@@ -147,9 +134,6 @@ function stateGuessingGame() {
     }
   }
 }
-
-
-
 
 //total points after game
 function finalScore() {
